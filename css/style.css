@@ -5,9 +5,16 @@
   color:#fff;
 }
 .menu_row{
-  height: 100px;  
+  height: 100px;
+  line-height: 100px;
+  vertical-align: middle;
 }
+.menu_logo{
 
+}
+.menu_links {
+  text-align: right;
+}
 .jumbo_background{
   height: 600px;
   background-color: #1ABC9C;
