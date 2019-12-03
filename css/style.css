@@ -1,5 +1,9 @@
+.text_align_center{
+  text-align: center;
+}
+
 /* HEADER */
-/* navbar */
+/* menu */
 .menu_background {
   background-color: #2C3E50;
   color:#fff;
@@ -10,19 +14,41 @@
   vertical-align: middle;
 }
 .menu_logo{
-
 }
 .menu_links {
   text-align: right;
 }
+/* jumbo */
 .jumbo_background{
-  height: 600px;
+  height: 300px; /* DEBUG:  */
   background-color: #1ABC9C;
 }
 .jumbo_display{
   text-align: center;
+  padding-top: 50px;
 }
-
 /* MAIN */
+/* portfolio */
+.portfolio_box{ /* DEBUG:  */
+  height: 200px;
+  background-color: #ADD8E6;
+  margin: 10px;
+  border-radius: 5px;
+}
+/* about */
+.about_background{
+  height: 300px; /* DEBUG:  */
+  background-color: #1ABC9C;
+}
+/* contact */
 
 /* FOOTER */
+footer{
+  color:#fff; /* DEBUG:  */
+}
+.footer_top{
+  background-color: #2C3E50;
+}
+.footer_bottom{
+  background-color: #1A252F
+}
