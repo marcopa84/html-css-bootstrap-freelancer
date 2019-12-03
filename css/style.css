@@ -1,12 +1,20 @@
 /* HEADER */
 /* navbar */
 .menu_background {
-  height: 100px;
   background-color: #2C3E50;
   color:#fff;
 }
+.menu_row{
+  height: 100px;  
+}
 
-
+.jumbo_background{
+  height: 600px;
+  background-color: #1ABC9C;
+}
+.jumbo_display{
+  text-align: center;
+}
 
 /* MAIN */
 
