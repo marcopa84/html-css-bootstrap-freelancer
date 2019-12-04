@@ -3,64 +3,104 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Bootstrap</title>
   </head>
   <body>
     <header>
-      <!-- navbar -->
-        <nav class=" menu_background">
+      <!-- menu -->
+      <section class="header_top">
           <div class="container">
-            <div class="row menu_row">
-              <div class="col-lg-6 menu_logo">Logo</div>
-              <div class="col-lg-6 menu_links">Menu</div>
+            <div class="row">
+              <div class="col-xs-6">
+                <div class="menu_logo">
+                  <a href="#">Start Bootstrap</a>
+                </div>
+              </div>
+              <div class="col-xs-6 menu_links">
+                <nav class="visible-md visible-lg">
+                  <a href="#portfolio">portfolio</a>
+                  <a href="#about">about</a>
+                  <a href="#contact">contact</a>
+                </nav>
+                <button class="btn burger_menu hidden-md hidden-lg">Menu<i class="fas fa-bars"></i>
+                </button>
+
+              </div>
             </div>
           </div>
-
-        </nav>
+      </section>
       <!-- jumbbo -->
-      <div class="jumbo_background">
+      <section class="header_bottom padding_top_80 padding_bottom_80">
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
-              <div class="jumbo_display">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, dicta, nisi. Aspernatur sed neque provident commodi eaque ipsam nostrum est consectetur, saepe, unde cum excepturi eligendi sit. Et, maiores deserunt.
+              <div class="jumbo_display text-center">
+                <img src="img/avatar.svg" alt="avatar bootstrap">
+                <h1>Start Bootstrap</h1>
+                <!-- divisor -->
+                <div class="divisor">
+                  <span class="divisor_line hidden-sm hidden-xs"></span>
+                  <i class="fas fa-star"></i>
+                  <span class="divisor_line hidden-sm hidden-xs"></span>
+                </div>
+                <!-- /divisor -->
+                <h3>Graphic Artist - Web Designer - Illustrator</h3>
+              </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </header>
 
     <main>
       <!-- portfolio -->
-      <div class="container text_align_center" id="portfolio">
+      <section class="text-center padding_top_80 padding_bottom_80" id="portfolio">
         <h2>Portfolio</h2>
-        <div class="row">
-          <div class="col-xs-6 col-lg-4">
-            <div class="portfolio_box"></div>
-          </div>
-          <div class="col-xs-6 col-lg-4">
-            <div class="portfolio_box"></div>
-          </div>
-          <div class="col-xs-6 col-lg-4">
-            <div class="portfolio_box"></div>
-          </div>
-          <div class="col-xs-6 col-lg-4">
-            <div class="portfolio_box"></div>
-          </div>
-          <div class="col-xs-6 col-lg-4">
-            <div class="portfolio_box"></div>
-          </div>
-          <div class="col-xs-6 col-lg-4">
-            <div class="portfolio_box"></div>
-          </div>
+        <!-- divisor -->
+        <div class="divisor">
+          <span class="divisor_line hidden-sm hidden-xs"></span>
+          <i class="fas fa-star"></i>
+          <span class="divisor_line hidden-sm hidden-xs"></span>
         </div>
-      </div>
+        <!-- /divisor -->
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="portfolio_box"></div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="portfolio_box"></div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="portfolio_box"></div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="portfolio_box"></div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="portfolio_box"></div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="portfolio_box"></div>
+            </div>
+        </div>
+        </div>
+      </section>
       <!-- about -->
-      <div class="about_background text_align_center" id="about">
+      <section class="about_background text-center padding_top_80 padding_bottom_80" id="about">
         <h2>About</h2>
+        <!-- divisor -->
+        <div class="divisor">
+          <span class="divisor_line hidden-sm hidden-xs"></span>
+          <i class="fas fa-star"></i>
+          <span class="divisor_line hidden-sm hidden-xs"></span>
+        </div>
+        <!-- /divisor -->
         <div class="container">
           <div class="row">
             <div class="col-xs-12 col-md-6">
@@ -71,42 +111,51 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- contact -->
-      <div class="container text_align_center" id="contact">
-        <h2>Contact Me</h2>
-        <div class="row">
-          <div class="col-xs-12">
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic natus deserunt vel nostrum eveniet quibusdam a minima ducimus deleniti, debitis fugit fuga, vitae voluptates culpa totam perspiciatis commodi quaerat, sed?
-            </div>
+      <section class="text-center padding_top_80 padding_bottom_80" id="contact">
+        <div class="container">
+          <h2>Contact Me</h2>
+          <!-- divisor -->
+          <div class="divisor">
+            <span class="divisor_line hidden-sm hidden-xs"></span>
+            <i class="fas fa-star"></i>
+            <span class="divisor_line hidden-sm hidden-xs"></span>
           </div>
-          <div class="col-xs-12">
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <!-- /divisor -->
+          <div class="row">
+            <div class="col-xs-12">
+              <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic natus deserunt vel nostrum eveniet quibusdam a minima ducimus deleniti, debitis fugit fuga, vitae voluptates culpa totam perspiciatis commodi quaerat, sed?
+              </div>
             </div>
-          </div>
-          <div class="col-xs-12">
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <div class="col-xs-12">
+              <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
             </div>
-          </div>
-          <div class="col-xs-12">
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <div class="col-xs-12">
+              <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
             </div>
-          </div>
-          <div class="col-xs-12">
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <div class="col-xs-12">
+              <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
             </div>
-          </div>
-          <div class="col-xs-12">
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <div class="col-xs-12">
+              <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
 
     <footer>
       <!-- footer_top -->
-      <div class="footer_top">
+      <section class="footer_top padding_top_80 padding_bottom_80">
         <div class="container">
           <div class="row">
             <div class="col-xs-12 col-md-4">
@@ -126,9 +175,9 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- footer_bottom -->
-      <div class="footer_bottom">
+      <section class="footer_bottom">
         <div class="container">
           <div class="row">
             <div class="col-xs-4 col-xs-offset-4">
@@ -136,7 +185,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
     </footer>
   </body>

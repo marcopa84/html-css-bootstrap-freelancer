@@ -1,38 +1,118 @@
-.text_align_center{
-  text-align: center;
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+.padding_top_80{
+  padding-top: 80px;
+}
+.padding_bottom_80{
+  padding-bottom: 80px;
 }
 
 /* HEADER */
 /* menu */
-.menu_background {
-  background-color: #2C3E50;
-  color:#fff;
-}
-.menu_row{
+.header_top {
+  position: fixed;
+  top:0;
+  z-index: 3;
   height: 100px;
   line-height: 100px;
   vertical-align: middle;
+  width: 100%;
+  background-color: #2C3E50;
+  color:#fff;
+}
+.header_top a:hover,
+.header_top a:focus,
+.header_top a:active{
+  text-decoration: none;
 }
 .menu_logo{
+  min-width: 259px;
+}
+.menu_logo a{
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 .menu_links {
   text-align: right;
 }
+.menu_links a{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: 15px;
+}
+.menu_links a:hover,
+.menu_links a:focus,
+.menu_links a:active{
+  color: #1ABC9C;
+}
+/* burger menu */
+.burger_menu{
+  color: #fff;
+  background-color: #1ABC9C;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.burger_menu i{
+  margin: 0 5px;
+}
 /* jumbo */
-.jumbo_background{
-  height: 300px; /* DEBUG:  */
+.header_bottom{
+  margin-top: 100px;
   background-color: #1ABC9C;
 }
 .jumbo_display{
-  text-align: center;
-  padding-top: 50px;
+  width: 60%;
+  margin:0 auto;
+  color: #fff;
 }
+.jumbo_display img{
+  width: 40%;
+  margin-bottom: 20px;
+}
+.jumbo_display h1{
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/* ----->divisor */
+.divisor{
+  width: 100%;
+ color: #fff;
+ height: 50px;
+ line-height: 50px;
+ font-size: 30px;
+ margin:10px 0;
+}
+.divisor_line{
+  display: inline-block;
+  height: 3px;
+  width: 200px;
+  background-color: #fff;
+  vertical-align: middle;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+/* ----->/divisor */
 /* MAIN */
 /* portfolio */
+#portfolio{
+  color: #2C3E50;
+}
+#portfolio .divisor{
+  color: #2C3E50;
+}
+#portfolio .divisor span{
+  background-color: #2C3E50;
+}
 .portfolio_box{ /* DEBUG:  */
   height: 200px;
   background-color: #ADD8E6;
-  margin: 10px;
+  margin: 15px 0;
   border-radius: 5px;
 }
 /* about */
@@ -41,6 +121,15 @@
   background-color: #1ABC9C;
 }
 /* contact */
+#contact{
+  color: #2C3E50;
+}
+#contact .divisor{
+  color: #2C3E50;
+}
+#contact .divisor span{
+  background-color: #2C3E50;
+}
 
 /* FOOTER */
 footer{
@@ -50,5 +139,6 @@ footer{
   background-color: #2C3E50;
 }
 .footer_bottom{
-  background-color: #1A252F
+  background-color: #1A252F;
+  padding:20px 0;
 }
