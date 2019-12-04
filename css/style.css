@@ -184,7 +184,24 @@ h2{
 #contact .divisor span{
   background-color: #2C3E50;
 }
-
+#contact input{
+  height: 50px;
+}
+#contact input#exampleInputMessage{
+  height: 250px;
+}
+.btn_contact{
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #1ABC9C;
+  color: #fff;
+}
+.btn_contact:hover{
+  background-color: #fff;
+  color: #1ABC9C;
+  border: 1px solid #1ABC9C;
+  cursor: pointer;
+}
 /* FOOTER */
 footer{
   color:#fff; /* DEBUG:  */
